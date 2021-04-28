@@ -1,7 +1,53 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+* {
+  box-sizing: border-box;
+}
 
+
+body {
+  background-color: #ef6ac0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  margin: 0;
+}
+
+
+.light {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  bottom: 3px;
+  margin-bottom: 0.5rem;
+}
+.light::after {
+  border-right: 6px solid rgba(255, 255, 255, 255);
+  border-radius: 100%;
+  content: ' ';
+  position: absolute;
+  top: 6spx;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+}
+.light.red.selected {
+  background-color: #c0392b;
+  box-shadow: 0 0 20px 5px #c0392b;
+}
+.light.yellow.selected {
+  background-color: #ffff00;
+  box-shadow: 0 0 20px 5px #ffff00;
+}
+.light.green.selected {
+  background-color: #009347;
+  box-shadow: 0 0 20px 5px #009347;
+}
+
+/* 
     You can write your own styles here...
     
     
@@ -9,5 +55,4 @@
     other sylesheets into your bunde as well, e.j:
     
     import 'relative/path/to/stylesheet.scss';
-
 */
